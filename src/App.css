@@ -1,0 +1,38 @@
+:focus {
+  outline: none;
+}
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.focus-visible {
+  outline: 1px solid red;
+}
+
+.focus-within *{
+  outline: none;
+}
+
+.App {
+  padding: 10px;
+}
+
+.App > div {
+  margin-bottom: 5px;
+}
+
+.div-input-container {
+  padding-top: 5px;  
+  padding-bottom: 5px;  
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.inline div {
+  display: inline-block;
+}
