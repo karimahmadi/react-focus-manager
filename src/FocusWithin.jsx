@@ -70,13 +70,7 @@ class FocusWithin extends React.PureComponent {
             classes.push('focus-visible');            
         }
 
-        const child = React.Children.only(this.props.children);
-
-        const childClone = React.cloneElement(child, {
-            ref: this.childRef,
-        });
-
-        return <div className={classes.join(' ')} tabIndex="-1">{childClone}</div>;
+        return <div className={classes.join(' ')} tabIndex="-1">{this.props.children}</div>;
     }
 }
 
