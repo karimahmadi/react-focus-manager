@@ -1,7 +1,7 @@
 {
   "name": "react-focus-manager",
   "description": "Set of React Components which help with focus management inside your application.",
-  "version": "0.0.1",  
+  "version": "0.0.2",  
   "dependencies": {
     "focus-visible": "^4.1.4",
     "react": "^16.4.0",
